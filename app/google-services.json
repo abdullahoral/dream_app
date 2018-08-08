@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "754649989519",
+    "firebase_url": "https://dreamapp-72eae.firebaseio.com",
+    "project_id": "dreamapp-72eae",
+    "storage_bucket": "dreamapp-72eae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754649989519:android:69ea95956bf1019c",
+        "android_client_info": {
+          "package_name": "com.furkansalihege.android.dreamapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "754649989519-fj1u61d2qtjd6qs9r1jusu34j44a91ks.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.furkansalihege.android.dreamapp",
+            "certificate_hash": "e5540f5de6e2c58b1b5913d9f7735db9279aa820"
+          }
+        },
+        {
+          "client_id": "754649989519-5i5f38ul537gu532tpq7l9ktm86n54cg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAAw4mDi_2AXJzQyMpn-8Thh8Yhwm7Lk0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "754649989519-5i5f38ul537gu532tpq7l9ktm86n54cg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

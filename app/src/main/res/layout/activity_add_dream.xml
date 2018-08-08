@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_add_dream"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="@dimen/app_bar_elevation"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:contentInsetStart="0dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/add_dream_main_text_margin"
+        android:gravity="center"
+        android:text="@string/last_dream"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <CheckBox
+        android:id="@+id/ck_wolf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/add_dream_margin"
+        android:layout_marginStart="@dimen/add_dream_margin"
+        android:text="@string/wolf"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <CheckBox
+        android:id="@+id/ck_dog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/add_dream_margin"
+        android:layout_marginStart="@dimen/add_dream_margin"
+        android:text="@string/dog"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+    <CheckBox
+        android:id="@+id/ck_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/add_dream_margin"
+        android:layout_marginStart="@dimen/add_dream_margin"
+        android:text="@string/other"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <CheckBox
+        android:id="@+id/ck_nothing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/add_dream_margin"
+        android:layout_marginStart="@dimen/add_dream_margin"
+        android:text="@string/nothing"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <Button
+        android:id="@+id/bt_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/add_dream_margin"
+        android:src="@drawable/ic_appwidget_icon"
+        android:text="@string/bt_save"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:background="@color/colorAccent"
+        android:padding="@dimen/rv_main_item_padding"
+        android:textColor="@android:color/white"/>
+</LinearLayout>

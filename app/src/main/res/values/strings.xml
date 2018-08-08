@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">DreamApp</string>
+    <string name="dreams">Dreams</string>
+    <string name="statistic">Statistic</string>
+    <string name="toolbar_main_title">Dream App</string>
+    <string name="bt_save">Save Dreams!</string>
+    <string name="fab_add_dream">Fab for Adding Dreams</string>
+    <string name="add_dreams">Add Dreams!</string>
+    <string name="last_dream">What did you see in your last dream?</string>
+    <string name="wolf">Wolf</string>
+    <string name="dog">Dog</string>
+    <string name="other">Other</string>
+    <string name="nothing">Nothing</string>
+
+
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="card_view_elevation">1dp</dimen>
+    <dimen name="app_bar_elevation">4dp</dimen>
+
+    <dimen name="fab_elevation">6dp</dimen>
+    <dimen name="fab_press_translation_z">8dp</dimen>
+    <dimen name="fab_margin">24dp</dimen>
+    <dimen name="fab_height">56dp</dimen>
+    <dimen name="fab_width">56dp</dimen>
+
+    <dimen name="rv_main_item_margin">8dp</dimen>
+    <dimen name="rv_main_item_padding">8dp</dimen>
+    <dimen name="rv_main_item_corner_radius">8dp</dimen>
+    <dimen name="app_bar_layout_height">140dp</dimen>
+    <dimen name="collapsing_toolbar_layout_margin_start">100dp</dimen>
+
+    <dimen name="add_dream_main_text_margin">16dp</dimen>
+    <dimen name="add_dream_margin">8dp</dimen>
+
+    <dimen name="widget_height">96dp</dimen>
+    <dimen name="widget_width">96dp</dimen>
+
+</resources>
