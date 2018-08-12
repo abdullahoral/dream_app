@@ -3,7 +3,7 @@ package com.furkansalihege.android.dreamapp;
 public class Dream {
 
     private String title;
-    private int rate;
+    int rate;
 
     public Dream() {
     }

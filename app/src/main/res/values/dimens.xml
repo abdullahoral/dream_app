@@ -19,7 +19,8 @@
     <dimen name="add_dream_main_text_margin">16dp</dimen>
     <dimen name="add_dream_margin">8dp</dimen>
 
-    <dimen name="widget_height">96dp</dimen>
-    <dimen name="widget_width">96dp</dimen>
+    <dimen name="widget_height">110dp</dimen>
+    <dimen name="widget_width">110dp</dimen>
+
 
 </resources>

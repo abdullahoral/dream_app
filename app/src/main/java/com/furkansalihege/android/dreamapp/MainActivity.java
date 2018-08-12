@@ -9,32 +9,35 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-import com.firebase.ui.firestore.FirestoreRecyclerOptions;
+import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
-import com.google.firebase.firestore.CollectionReference;
-import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.Query;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
-    private FirebaseFirestore db = FirebaseFirestore.getInstance();
-    private CollectionReference dreambookRef =  db.collection("Dreambook");
+    FirebaseDatabase db = FirebaseDatabase.getInstance();
+    DatabaseReference dreamBookRef = db.getReference("Dreambook");
+
 
     private DreamAdapter dreamAdapter;
 
-    @BindView(R.id.toolbar_main) Toolbar toolbar;
-    @BindView(R.id.rv_main) RecyclerView recyclerView;
-    @BindView(R.id.fab_add_dream) FloatingActionButton fabAddDream;
-    @BindView(R.id.adView) AdView mAdView;
+    @BindView(R.id.toolbar_main)
+    Toolbar toolbar;
+    @BindView(R.id.rv_main)
+    RecyclerView recyclerView;
+    @BindView(R.id.fab_add_dream)
+    FloatingActionButton fabAddDream;
+    @BindView(R.id.adView)
+    AdView mAdView;
 
 
     private static final String SAMPLE_ADMOB_APP_ID = "ca-app-pub-3940256099942544~3347511713";
-
 
 
     @Override
@@ -57,27 +60,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setUpRecyclerView() {
-        Query query = dreambookRef.orderBy("rate", Query.Direction.DESCENDING );
 
-        FirestoreRecyclerOptions<Dream> options = new FirestoreRecyclerOptions.Builder<Dream>()
+        com.google.firebase.database.Query query = dreamBookRef.orderByChild("rate");
+
+        FirebaseRecyclerOptions<Dream> options = new FirebaseRecyclerOptions.Builder<Dream>()
                 .setQuery(query, Dream.class)
+                .setLifecycleOwner(this)
                 .build();
 
         dreamAdapter = new DreamAdapter(options);
         recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        LinearLayoutManager mLayoutManager = new LinearLayoutManager(this);
+        mLayoutManager.setReverseLayout(true);
+        mLayoutManager.setStackFromEnd(true);
+        recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setAdapter(dreamAdapter);
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        dreamAdapter.startListening();
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        dreamAdapter.stopListening();
-    }
 }

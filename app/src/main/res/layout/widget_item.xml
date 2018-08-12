@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/rv_main_item_padding"
+    android:background="@drawable/gradient"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/widget_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:maxLines="@integer/rv_main_item_max_line"
+        android:minLines="@integer/rv_main_item_min_line"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:text="Title" />
+
+    <TextView
+        android:id="@+id/widget_tv_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:maxLines="@integer/rv_main_item_max_line"
+        android:minLines="@integer/rv_main_item_min_line"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:text="1" />
+
+</RelativeLayout>

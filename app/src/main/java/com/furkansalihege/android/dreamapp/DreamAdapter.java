@@ -7,21 +7,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
-import com.firebase.ui.firestore.FirestoreRecyclerOptions;
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.firebase.ui.database.FirebaseRecyclerOptions;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class DreamAdapter extends FirestoreRecyclerAdapter<Dream, DreamAdapter.DreamHolder> {
+public class DreamAdapter extends FirebaseRecyclerAdapter<Dream, DreamAdapter.DreamHolder> {
 
-    /**
-     * Create a new RecyclerView adapter that listens to a Firestore Query.  See {@link
-     * FirestoreRecyclerOptions} for configuration options.
-     *
-     * @param options
-     */
-    public DreamAdapter(@NonNull FirestoreRecyclerOptions<Dream> options) {
+
+    public DreamAdapter(@NonNull FirebaseRecyclerOptions<Dream> options) {
         super(options);
     }
 

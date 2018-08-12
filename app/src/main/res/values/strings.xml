@@ -12,7 +12,7 @@
     <string name="other">Other</string>
     <string name="nothing">Nothing</string>
     <string name="widget_text">Dream Icon Image for AppWidget</string>
-
+    <string name="empty_view_text">Connection Problem!</string>
 
 
 </resources>

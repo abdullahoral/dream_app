@@ -5,7 +5,7 @@ android {
         config {
             keyAlias 'udacity'
             keyPassword '234567890'
-            storeFile file("$rootDir/android.jks")
+            storeFile file("$rootDir/keystores/android.jks")
             storePassword '234567890'
         }
     }
@@ -35,8 +35,8 @@ dependencies {
     implementation 'com.android.support:design:27.1.1'
     implementation 'com.android.support:multidex:1.0.3'
 
-    // FirebaseUI for Cloud Firestore
-    implementation 'com.firebaseui:firebase-ui-firestore:4.1.0'
+    // FirebaseUI for Firebase Realtime Database
+    implementation 'com.firebaseui:firebase-ui-database:4.1.0'
 
     //Google Mobile Ads SDK
     implementation 'com.google.firebase:firebase-ads:15.0.1'
